@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+
+    tools:context=".restaurant_menu_start">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01">
+
+
+        <TextView
+            android:id="@+id/restaurantMenuName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Restaurant Name"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/restaurantMenuCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:text="Indian,chinese"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/restaurantMenuAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C-312,Rudra Hostel"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="8dp"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/border_backgroud"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/restaurantMenuRating"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#04A504"
+                android:text="3.5"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="4dp"
+                android:text="Review"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="95dp"
+            android:layout_marginEnd="12dp"
+            android:background="#929090"
+            android:text=""
+            android:textSize="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="86dp"
+            android:layout_marginBottom="24dp"
+            android:text="40% off on all items"
+            android:textColor="#F8A723"
+            android:textSize="16dp"
+            android:visibility="gone" />
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_marginBottom="20dp"
+            android:elevation="5dp"
+
+            android:background="#fff"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="195dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+
+                app:srcCompat="@drawable/ic_search_gray_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <EditText
+                android:visibility="gone"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/searchMenuStartEditTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="textPersonName"
+                android:hint=""
+                android:textSize="22dp"
+                android:background="#00A5A1A1"
+                android:textColorHint="#A5A1A1" />
+
+            <TextView
+                android:id="@+id/searchWithinMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="6dp"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:text="Search within the menu"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/restaurantMenuStartOfferRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="105dp"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

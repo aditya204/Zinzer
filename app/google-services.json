@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "980437106380",
+    "firebase_url": "https://login-project-f2666.firebaseio.com",
+    "project_id": "login-project-f2666",
+    "storage_bucket": "login-project-f2666.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980437106380:android:c21ecee5d4056ddb",
+        "android_client_info": {
+          "package_name": "com.example.lutto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980437106380-jh95l5udvb9s3ptcju9eb0obl19b6fko.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lutto",
+            "certificate_hash": "1411e9d61e62388176eee4725f863046732bbb42"
+          }
+        },
+        {
+          "client_id": "980437106380-vih9m6b2eeafecij7a2gcgbi378aanv1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTfxuu3YMnRC_Q9ckdAkqSUiohHMTEgng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980437106380-vih9m6b2eeafecij7a2gcgbi378aanv1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

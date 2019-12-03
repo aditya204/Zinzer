@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/corner_round_image"
+    android:elevation="3dp"
+    android:padding="5dp"
+
+    android:layout_width="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="4dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/category_image"
+        android:layout_width="115dp"
+        android:layout_height="107dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/south_indian_food" />
+
+    <TextView
+
+        android:id="@+id/category_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="South Indian"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/category_image"
+        app:layout_constraintEnd_toEndOf="@+id/category_image"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="@+id/category_image"
+        app:layout_constraintTop_toTopOf="@+id/category_image"
+        app:layout_constraintVertical_bias="0.934" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

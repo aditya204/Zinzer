@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/myCartMenuRestaurantItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Product Name"
+        android:textColor="#000"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/myCartMenuRestaurantItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Price"
+        android:textColor="#000"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/myCartMenuRestaurantItemName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/myCartMenuRestaurantItemName"
+        app:layout_constraintTop_toBottomOf="@+id/myCartMenuRestaurantItemName" />
+
+    <TextView
+        android:id="@+id/myCartMenuRestaurantItemQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@+id/myCartMenuRestaurantItemPrice"
+        app:layout_constraintTop_toBottomOf="@+id/myCartMenuRestaurantItemPrice" />
+
+
+    <TextView
+        android:id="@+id/myCartMenuRestaurantItemadd"
+        android:background="@drawable/border_backgroud"
+        android:layout_width="90dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+
+        android:text="ADD"
+        android:textAlignment="center"
+        android:textColor="#22BB48"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:background="@drawable/border_backgroud"
+        android:id="@+id/myCartMenuRestaurantItemnoCountLayout"
+        android:layout_width="90dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/myCartMenuRestaurantItemnoCountSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:text="-"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/myCartMenuRestaurantItemnoCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textColor="#22BB48"
+            android:textAlignment="center"
+
+            />
+        <TextView
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/myCartMenuRestaurantItemnoCountAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textColor="#22BB48"
+            android:textAlignment="center"
+            android:text="+"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/myCartMenuRestaurantItemTotalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="Total Price"
+        android:textColor="#000"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myCartMenuRestaurantItemnoCountLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

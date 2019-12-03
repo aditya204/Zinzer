@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".myCart_Menu_Restauerant_Activity">
+
+
+    <ImageView
+        android:id="@+id/myCartMenuRestaurantImage"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/myCartMenuRestaurantName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Resstaurant Name"
+        android:textSize="20dp"
+        android:textColor="#000"
+        app:layout_constraintStart_toEndOf="@+id/myCartMenuRestaurantImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/myCartMenuRestaurantCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Indian,SouthIndian"
+        android:textSize="14dp"
+        app:layout_constraintStart_toEndOf="@+id/myCartMenuRestaurantImage"
+        app:layout_constraintTop_toBottomOf="@+id/myCartMenuRestaurantName" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myCartMenuRestaurantRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myCartMenuRestaurantImage" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:elevation="3dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            app:srcCompat="@drawable/ic_mode_edit_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <EditText
+            android:id="@+id/myCartMenuRestaurantRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:ems="10"
+            android:gravity="bottom"
+            android:hint="Any Request to Restaurant"
+            android:inputType="textPersonName"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:text=""
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="30dp"
+        android:background="#5A5A5A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myCartMenuRestaurantRecycler" />
+</androidx.constraintlayout.widget.ConstraintLayout>
